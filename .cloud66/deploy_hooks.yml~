@@ -1,0 +1,11 @@
+development:
+    before_postgresql:
+      - source: /.cloud66/files/before_postgresql.sh
+        destination: ~/before_postgresql.sh
+        target: rails
+        execute: true
+    after_mongodb:
+      - source: /.cloud66/files/after_mongodb.sh
+        destination: ~/after_mongodb.sh
+        target: rails
+        execute: true

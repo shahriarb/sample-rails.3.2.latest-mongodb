@@ -1,0 +1,11 @@
+development:
+    before_mongodb:
+      - source: /.cloud66/files/before_mongodb.sh
+        destination: ~/before_mongodb.sh
+        target: rails
+        execute: true
+    after_mongodb:
+      - source: /.cloud66/files/after_mongodb.sh
+        destination: ~/after_mongodb.sh
+        target: rails
+        execute: true
