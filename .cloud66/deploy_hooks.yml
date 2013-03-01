@@ -9,3 +9,14 @@ development:
         destination: ~/after_mongodb.sh
         target: rails
         execute: true
+    before_redis:
+      - source: /.cloud66/files/before_redis.sh
+        destination: ~/before_redis.sh
+        target: rails
+        execute: true
+    after_redis:
+      - source: /.cloud66/files/after_redis.sh
+        destination: ~/after_redis.sh
+        target: rails
+        execute: true
+
